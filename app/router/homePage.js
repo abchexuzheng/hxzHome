@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import {ListMenu} from './../../src'
+import {ListMenu} from './../../components'
 
+const menu=[{
+    title:'HOME',
+    link:'home'
+}]
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -9,10 +13,8 @@ class HomePage extends React.Component {
     }
     render(){
         return <div>
-            <ListMenu header="hxz"/>
+            <ListMenu header="hxz" menu={menu}/>
         </div>
-
-
     }
 }
 

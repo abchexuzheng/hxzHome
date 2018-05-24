@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import './style'
 
 
 class ListMenu extends React.Component {
@@ -7,15 +8,17 @@ class ListMenu extends React.Component {
         super(props);
     }
     render(){
-        return <div>
+        return <div className="listMenu">
             <div>{this.props.header}</div>
             <div>
-                <ul>
-                    <li>a</li>
+                <ul className="listMenu-list">
+                    {this.props.menu&&this.props.menu.map(item=>{
+                        return <li>{item.title}</li>
+                    })}
                 </ul>
             </div>
         </div>
     }
 }
 
-export default HomePage;
+export default ListMenu;
