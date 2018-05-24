@@ -7,6 +7,7 @@ import RouteIndex from './router'
 
 
 
+
 const portal=document.getElementById("personalPortal");
 const render=function(dom,options){
     ReactDom.render(

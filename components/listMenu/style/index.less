@@ -1,0 +1,39 @@
+.listMenu{
+    width: 30%;
+    overflow:auto;
+    min-height: 100%;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    background: white;
+    &-header{
+        margin: 20%;
+        &-title{
+            font-size: 2.4rem;
+            line-height: 1.4667;
+            font-weight: 600;
+        }
+        &-info{
+            font-size:1.4rem;
+        }
+    }
+    &-list{
+        list-style: none;
+        margin: 0 20% 20%;
+        padding: 0;
+    }
+    &-item{
+        border-bottom: 1px solid #eaeaea;
+        position: relative;
+        &-href{
+            padding: 0.5rem;
+            width: 100%;
+            display: block;
+            color: #666;
+            &:hover{
+                color: #999;
+            }
+        }
+    }
+
+}

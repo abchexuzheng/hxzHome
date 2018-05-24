@@ -2,7 +2,14 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import {ListMenu} from './../../components'
-import $ from 'jquery'
+
+const menu=[{
+    title:'HOME',
+    link:'home'
+},{
+    title:'ARTICLE',
+    link:'article'
+}]
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -10,7 +17,11 @@ class HomePage extends React.Component {
     }
     render(){
         return <div>
-            123
+            <ListMenu
+                header="HXZ Home"
+                headerInfo="HXZ的个人小站"
+                menu={menu}
+            />
         </div>
     }
 }
